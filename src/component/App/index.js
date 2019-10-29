@@ -1,11 +1,12 @@
 import { css } from '@emotion/core';
 
 import React from 'react';
+import { hot } from 'react-hot-loader/root';
 import SubComponent from '../SubComponent';
 import img from './omg.jpg';
 import { heading1 } from '../../style/typography';
 import { shadow } from '../../style/mixins';
-import { green } from '../../style/colors';
+import { green, blue } from '../../style/colors';
 function App() {
   return (
     <div
@@ -38,4 +39,4 @@ function App() {
   );
 }
 
-export default App;
+export default hot(App);
